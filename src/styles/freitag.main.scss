@@ -1,0 +1,35 @@
+/* created by nfv / CodePanda */
+
+$color_one:#EAE2B7;
+$color_two:#FCBF49;
+$color_three:#F77F00;
+$color_four:#D62828;
+$color_five:#003049;
+$color_txt:#faf9f9;
+$color_bg:#ecdfc8;
+body{
+&.freitag{
+  background-color: $color_bg;
+}
+  background-color:$color_txt;
+  .freitag-app{
+    &--not-freitag{
+    background-color: $color_one;
+    .freitag__logo{
+      height: 50px;
+      width: 50px;
+    }
+    .freitag__header{
+      background-color: $color_five;
+      .freitag__menu{
+        background-color: $color_five;
+        .freitag-menu__item{
+          &:hover{
+            background-color: $color_one;
+          }
+        }
+        }
+      }
+    }
+  }
+}

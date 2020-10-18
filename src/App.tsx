@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import logo from './assets/16485-unicorn-panda.gif';
+import logo2 from './assets/animation_200_kgdevlap.gif';
+import { Layout, Menu, Breadcrumb } from 'antd';
+const { Header, Content, Footer } = Layout;
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Layout className={"freitag-app--freitag"}>
+            <Header className="freitag__header" style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
+                <Menu className="freitag__menu" theme={"dark"} mode="horizontal">
+                    <img alt="logo" src={logo2} className="logo freitag__logo"/>
+                    <Menu.Item className="freitag-menu__item">test</Menu.Item>
+                    <Menu.Item className="freitag-menu__item">test 2</Menu.Item>
+                    <Menu.Item className="freitag-menu__item">test 3</Menu.Item>
+
+                </Menu>
+            </Header>
+            <div className="site-layout-background" style={{ padding: 24, minHeight: 380 }}>
+
+            </Content>
+            <Footer>
+
+            </Footer>
+        </Layout>
+    );
 }
 
 export default App;
