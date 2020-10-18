@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import logo from './assets/16485-unicorn-panda.gif';
 import logo2 from './assets/animation_200_kgdevlap.gif';
 import { Layout, Menu, Breadcrumb } from 'antd';
 const { Header, Content, Footer } = Layout;
@@ -17,10 +16,11 @@ function App() {
                 </Menu>
             </Header>
             <div className="site-layout-background" style={{ padding: 24, minHeight: 380 }}>
-
+            <Content>
             </Content>
+            </div>
             <Footer>
-
+x
             </Footer>
         </Layout>
     );
