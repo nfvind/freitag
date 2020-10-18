@@ -9,20 +9,38 @@ $color_txt:#faf9f9;
 $color_bg:#ecdfc8;
 body{
 &.freitag{
-  background-color: $color_bg;
-}
   background-color:$color_txt;
+  .ant-menu-dark,.ant-layout-sider-trigger{
+    background-color: $color_five;
+  }
+}
+
   .freitag-app{
-    &--not-freitag{
-    background-color: $color_one;
+    background-color:$color_txt;
+    height: 100vh;
     .freitag__logo{
       height: 50px;
       width: 50px;
+    }
+    .side-menubar{
+      background-color: $color_five;
+    }
+    .content{
+      .freitag__breadcrumb{
+        margin:16px 1.5rem 16px 1.5rem;
+      }
+      margin-top: 64px;
+      .content__inner{
+        min-height: 380px;
+        margin: 1.5rem;
+        background-color: $color_one;
+      }
     }
     .freitag__header{
       background-color: $color_five;
       .freitag__menu{
         background-color: $color_five;
+
         .freitag-menu__item{
           &:hover{
             background-color: $color_one;
@@ -31,5 +49,8 @@ body{
         }
       }
     }
+    .freitag__footer{
+    background-color:$color_five;
   }
+
 }
